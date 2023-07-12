@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Jisho Mahou",
+  "version": "1.0",
+  "description": "Improve the jisho.org experience",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://jisho.org/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
