@@ -11,7 +11,6 @@ const selectedText = () => {
 for (const entry of document.querySelectorAll('.kanji_light, .concept_light, .sentence')) {
   const details = entry.querySelector('.light-details_link');
   if (details !== null) {
-    console.log(entry);
     entry.addEventListener("click", (event) => {
       const anchor = event.target.tagName === "A";
       const selection = selectedText() !== "";
@@ -20,7 +19,6 @@ for (const entry of document.querySelectorAll('.kanji_light, .concept_light, .se
         setTimeout(() => {
           if (entry.dataset.singleClicked === "true") {
             entry.dataset.singleClicked = "false";
-            console.log("click");
             details.click();
           }
         }, 150);
