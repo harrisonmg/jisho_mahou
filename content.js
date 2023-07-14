@@ -11,6 +11,7 @@ const selectedText = () => {
 for (const entry of document.querySelectorAll('.kanji_light, .concept_light, .sentence')) {
   const details = entry.querySelector('.light-details_link');
   if (details !== null) {
+    entry.style.cursor = "pointer";
     entry.addEventListener("click", (event) => {
       const anchor = event.target.tagName === "A";
       const selection = selectedText() !== "";

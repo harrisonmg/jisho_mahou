@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Jisho Mahou",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Improve the jisho.org experience",
   "content_scripts": [
     {
